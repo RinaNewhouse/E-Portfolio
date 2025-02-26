@@ -701,3 +701,30 @@ footer .personal__logo {
         padding: 40px;
     }
 }
+
+@media (max-width: 400px) {
+    .title {
+        font-style: 36px;
+    }
+    .header__para {
+        font-style: 12px;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 20px;
+    }
+}
