@@ -700,9 +700,6 @@ footer .personal__logo {
     .modal__half {
         padding: 40px;
     }
-    .section__title {
-        font-size: 52px;
-    }
 }
 
 @media (max-width: 400px) {
