@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    z-index: 10;
+}
+
 li {
     list-style-type: none;
 }
@@ -144,7 +148,8 @@ nav, .scroll, .header {
 .modal--open .header, 
 .modal--open .personal__logo, 
 .modal--open .nav__link--anchor,
-.modal--open .container {
+.modal--open .container,
+.modal--open .shape {
     opacity: 0;
     visibility: hidden;
     transition: all 400ms;
@@ -239,6 +244,7 @@ nav, .scroll, .header {
     position: absolute;
     bottom: 32px;
     right: 40px;
+    z-index: 10;
 }
 
 .scroll {
