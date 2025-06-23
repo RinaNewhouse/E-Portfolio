@@ -137,6 +137,14 @@ label {
     color: #e99dcc;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 nav, .scroll, .header {
     opacity: 1;
     visibility: visible;
@@ -568,6 +576,7 @@ nav {
 
 .project__img {
     width: 100%;
+    display: block;
     transition: opacity 300ms, transform 450ms ease;
 }
 
@@ -596,6 +605,34 @@ nav {
 
 .project__description--para {
     margin: 16px 0;
+}
+
+.has-tooltip {
+    position: relative;
+}
+
+.has-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #242424;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.has-tooltip:hover::after {
+    opacity: 1;
 }
 
 /* FOOTER */
